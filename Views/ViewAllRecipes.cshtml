@@ -1,0 +1,43 @@
+﻿
+@{
+	ViewData["Title"] = "ViewAllRecipes";
+}
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>View All Recipes</title>
+	<link rel="stylesheet" href="~/css/site.css" type="text/css" />
+</head>
+<body class="center">
+<h1>View All Appraisals</h1>
+<table>
+	<!--Buttons-->
+	<tr>
+		<a href="~/Home/Index" class="btn_menu">Home</a>
+			<a href="~/Home/Recipes" class="btn_menu">Recipes</a>
+			<a href="~/Home/ViewAllRecipes" class="btn_menu">View All Recipes</a>
+	</tr>
+</table>
+
+<!--Print Recipes info-->
+<table class="center">
+
+	@foreach (var recipe in ViewBag.recipe)
+	{
+		<tr class="center">
+			<td>@recipe.Name</td>
+			<td>@recipe.Description</td>
+			<td>@recipe.Ingredients</td>
+			<td>@recipe.Instructions</td>
+
+		</tr>
+	}
+</table>
+
+
+</body>
+</html>
+
+

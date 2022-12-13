@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewData["Title"] = "FailureScreen";
+}
+
+
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Failed Recipe</title>
+	<link rel="stylesheet" href="~/css/site.css" type="text/css" />>
+</head>
+
+<body class="center">
+	<!--Failure Message-->
+	<h1 >An Error Has Occurred. Try again.</h1>
+
+
+
+	<div>
+
+		<table>
+			<tr>
+				<a href="~/Home/Index" class="btn_menu">Home</a>
+				<a href="~/Home/Recipes" class="btn_menu">Recipes</a>
+			</tr>
+		</table>
+
+		<p>
+			Please enter recipe details.
+		</p>
+
+
+
+
+		<form action="~/Home/Recipes" method="POST">
+			<table class="table" style="width: 100%">
+
+				<tr>
+					<td>s
+						<label margin-top:5px for="Name">Recipe Name: </label>
+						<input type="text" id="title" name="title" placeholder="Recipe Name"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label margin-top:5px for="Description">Recipe Description :</label>
+						<input type="text" id="isbn" name="isbn" placeholder="Description" />
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Ingredients">Ingredients:</label>
+						<input type="text" id="version" name="version" placeholder="Ingredients" />
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Instructions">Instructions:</label>
+						<input type="text" id="price" name="price" placeholder="Instructions" />
+
+					</td>
+				</tr>
+
+
+
+
+			</table>
+
+
+
+
+
+
+			<input type="submit" value="Recipes" />
+
+		</form>
+
+
+	</div>
+
+</body>
+
+</html>
